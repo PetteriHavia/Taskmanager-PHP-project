@@ -1,0 +1,239 @@
+
+
+.header{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+font-family: Verdana, Geneva, sans-serif;
+}
+
+form{
+  width:45%;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px 5px 10px 5px;
+  background:#78C8B4;
+  border: 4px solid #548C7F;
+  border-radius: 15px;
+}
+
+form, h3{
+  color:red;
+}
+
+#taskInput, #taskPerson{
+  margin: 10px 15px 10px 15px;
+  width: 35%;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+#taskInput:hover, #taskPerson:hover{
+  border: 2px solid black;
+  border-color: #548C7F;
+}
+
+.listBtn{
+  width:15%;
+  margin: 10px 5px 10px 5px;
+  padding:10px 10px 10px 10px;
+  border: none;
+  border-radius: 15px;
+  background-color: #548C7F;
+  color: white;
+}
+
+
+.listBtn:hover{
+  background-color: #5795ff;
+}
+
+table{
+  width:45%;
+  margin: auto;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+thead{
+}
+
+th{
+  border-bottom: 2px solid #1A5E63;
+  padding: 5px 5px 10px 5px;
+  margin:5px 5px 5px 5px;
+
+}
+
+td{
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  border-bottom: 2px solid #1A5E63;
+}
+
+.delete{
+
+  display: block;
+  background-color: #750808;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.edit{
+  margin-bottom: 10px;
+  display: block;
+  background-color: #1A5E63;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.edit:hover{
+  background-color: #78C8B4;
+}
+
+.delete:hover{
+  background-color: #ff0000;
+}
+
+
+.bottomDiv{
+  margin:auto;
+  width:50%;
+  text-align: center;
+
+}
+
+.clearBtn{
+  width:15%;
+  margin: 25px 5px 5px 5px;
+  padding: 10px 10px 10px 10px;
+  border:none;
+  border-radius: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #750808;
+}
+
+.clearBtn:hover{
+  background-color: #ff0000;
+}
+
+
+/*SCALING FOR DESKTOPS AND LAPTOPS*/
+@media screen and (min-width: 992px) {
+
+  form{
+    width: 50%;
+  }
+  table{
+    width:50%;
+  }
+
+  .edit, .delete{
+  width: 60px;
+  padding: 6px 12px;
+  margin: auto;
+  display: block;
+  }
+
+  .task, .person, .manage{
+    word-break: break-all;
+    width: 40%;
+  }
+
+}
+
+
+/* SCALING FOR TABLETS */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+  form{
+    width: 90%;
+  }
+  table{
+    width:90%;
+  }
+
+  .edit, .delete{
+  width: 50px;
+  padding: 6px 12px;
+  font-size: 15px;
+  margin: auto;
+  display: block;
+
+  }
+
+  .clearBtn{
+    width:40%;
+  }
+
+  .task, .person, .manage{
+    word-break: break-all;
+    width: 40%;
+  }
+}
+
+
+/* SCALING FOR LARGE PHONES / PORTRAIT TABLETS*/
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+  form{
+    width:100%;
+    padding: 0px 0px 0px 0px;
+  }
+  table{
+    width:100%;
+    font-size: 15px;
+  }
+
+  .edit, .delete{
+  width: 50px;
+  padding: 6px 12px;
+  }
+
+  .clearBtn{
+    width:40%;
+  }
+
+  .task, .person, .manage{
+    word-break: break-all;
+    width: 35%;
+  }
+}
+
+/* SCALING FOR MOBILE SCALING */
+@media screen and (max-width: 600px) {
+
+  #taskInput, #taskPerson{
+    width: 80%;
+  }
+
+  form{
+    width:100%;
+    padding: 0px 0px 0px 0px;
+  }
+  table{
+    width:100%;
+    font-size: 15px;
+  }
+  .task, .person, .manage{
+    word-break: break-all;
+    width: 45%;
+  }
+  .edit, .delete{
+    width: 40px;
+    padding: 3px 6px;
+    font-size: 12px;
+
+  }
+  .clearBtn{
+    width:40%;
+  }
+}
