@@ -101,20 +101,6 @@ if(!empty($result)==1) {
 }
 
 
-/*
-//OIKEA UPDATE
-if(isset($_POST['update'])) {
-  $id = $_POST['id'];
-  $task = $_POST['task'];
-  $taskPerson = $_POST['taskPerson'];
-
-  $conn->query("UPDATE tasktable SET task='$task', taskPerson='$taskPerson' WHERE ID=$id ") or
-    die($conn->error);
-  header('location: index.php');
-}
-*/
-
-
 //Update data
 if(isset($_POST['update'])) {
 
