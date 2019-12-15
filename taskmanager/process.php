@@ -4,16 +4,17 @@
   // Connect to database
   $conn = mysqli_connect("localhost", "root", "", "taskmanager") or die (mysqli_error($conn));
 
-// Variables
+  // Variables
   $id = 0;
+  //update btn display
   $update= false;
-// Before edit btn is clicked set task and taskPerson to be empty strings
+  // Before edit btn is clicked set task and taskPerson to be empty strings
   $task = '';
   $taskPerson = '';
 
 
   /*Insert new task into "taskmanager" database in table called "tasktable"
-  + prevent SQL injections */
+  + prevent SQL injections*/
   if(isset($_POST['submit'])) {
   //Connect to database
   $conn = mysqli_connect("localhost", "root", "", "taskmanager");
@@ -23,7 +24,7 @@
   }
   //Check if user input is empty
   if(empty($_POST['task']) || empty($_POST['taskPerson'])) {
-    $update = true;
+  //task.js calls error message in different file
      header('location: index.php');
    }else{
   //Make a prepared statement to prevent SQL injections
@@ -43,7 +44,6 @@
 }
   // Close connection
   mysqli_close($conn);
-
 }
 
 
@@ -103,7 +103,7 @@ if(!empty($result)==1) {
 
 //Update data
 if(isset($_POST['update'])) {
-
+//Check input fields
   if(empty($_POST['task']) || empty($_POST['taskPerson'])) {
      header('location: index.php');
    }else{
